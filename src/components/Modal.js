@@ -5,7 +5,7 @@ const Modal = ({ show, close }) => {
     <div
       className={`${
         show ? 'fixed' : 'hidden'
-      } z-50 inset-0 overflow-y-auto max-w-4xl mx-auto my-auto `}
+      } z-100 inset-0 overflow-y-auto max-w-2xl mx-auto my-20 `}
       aria-labelledby='modal-title'
       role='dialog'
       aria-modal='true'
@@ -16,22 +16,20 @@ const Modal = ({ show, close }) => {
           aria-hidden='true'
         ></div>
 
-        <div className='bg-gradient-to-br from-blue-200 via-white to-blue-200 rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:w-96 sm:h-96 shadow-lg'>
+        <div className='bg-gradient-to-br from-blue-200 via-white to-blue-200 rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:w-96 sm:h-96'>
           <div className='bg-transparent px-4 pt-5 pb-4 sm:p-6 sm:pb-4 h-full flex flex-col'>
-            <div className='flex justify-center'>
-              <h1 className='text-2xl text-gray-700'>
-                Surya Sama - Full Stack Developer
-              </h1>
+            <div className='text-center justify-center'>
+              <h3
+                className='text-xl leading-6 font-medium text-gray-900 mt-4 mx-auto mb-3'
+                id='modal-title'
+              >
+                Introduction
+              </h3>
+              <hr className='my-4' />
             </div>
-            <hr className='my-4' />
-            <h3
-              className='text-2xl leading-6 font-medium text-gray-900 mt-4 mx-auto mb-3'
-              id='modal-title'
-            >
-              Introduction
-            </h3>
+
             <div className='mt-2 flex-grow'>
-              <p className='text-2xl text-gray-700'>
+              <p className='text-lg text-gray-700'>
                 I am a full stack developer skilled in React.js, Node.js, and
                 Firebase. I have experience in building end-to-end web
                 applications using React, Material-UI, Express.js, and Tailwind
@@ -47,11 +45,11 @@ const Modal = ({ show, close }) => {
                 .
               </p>
               <hr className='my-4' />
-              <p className='text-2xl text-gray-700'>
+              <p className='text-lg text-gray-700'>
                 This gallery was built using React, Tailwind CSS, and the
                 Pixabay API. Check out the{' '}
                 <a
-                  href='your-code-link'
+                  href='https://github.com/suryasama008/react-tailwiind-pixabay-photo-gallery'
                   target='_blank'
                   rel='noopener noreferrer'
                   className='text-blue-600'
@@ -59,6 +57,10 @@ const Modal = ({ show, close }) => {
                   code here
                 </a>
                 .
+              </p>
+              <hr className='my-4' />
+              <p className='text-lg text-gray-700 text-center'>
+                - Surya Sama
               </p>
             </div>
             <div className='bg-transparent px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse'>
